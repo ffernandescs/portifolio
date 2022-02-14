@@ -561,24 +561,51 @@ section {
 	align-items: center;
 	width: 100%;
 	height: 8px;
-	border-radius: 40px;
-}
-
-.percentual span {
-	width: 100%;
-	height: 100%;
 	border-radius: 30px;
 	background-color: #fff;
+
 }
 
-.percentual span::after {
-	content: '';
-	display: block;
-	width: 90%;
+.html {
+	width: 80%;
 	height: 100%;
 	border-radius: 15px 0 0 15px;
 	background-color: rgb(33, 165, 226);
+}
 
+.css {
+	width: 80%;
+	height: 100%;
+	border-radius: 15px 0 0 15px;
+	background-color: rgb(33, 165, 226);
+}
+
+.javaScript {
+	width: 35%;
+	height: 100%;
+	border-radius: 15px 0 0 15px;
+	background-color: rgb(33, 165, 226);
+}
+
+.reactJs {
+	width: 20%;
+	height: 100%;
+	border-radius: 15px 0 0 15px;
+	background-color: rgb(33, 165, 226);
+}
+
+.reactNative {
+	width: 20%;
+	height: 100%;
+	border-radius: 15px 0 0 15px;
+	background-color: rgb(33, 165, 226);
+}
+
+.jQuery {
+	width: 10%;
+	height: 100%;
+	border-radius: 15px 0 0 15px;
+	background-color: rgb(33, 165, 226);
 }
 
 .infoContact {
@@ -714,6 +741,26 @@ form button:hover {
 #navMenu.ativo #hamgurger {
 	border-top-color: transparent ;
 }
+
+[data-anime] {
+	opacity: 0;
+	transition: .3s;
+}
+
+[data-anime="right"] {
+	transform: translate3d(-20px, 0, 0);
+}
+
+
+[data-anime="left"] {
+	transform: translate3d(20px, 0, 0);
+}
+
+[data-anime].animated {
+	opacity: 1;
+	transform: translate3d(0, 0, 0);
+}
+
 
 @media (max-width: 600px) {
 

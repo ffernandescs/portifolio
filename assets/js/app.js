@@ -69,35 +69,6 @@ function smoothScrollTo(endX, endY, duration) {
   }, 1000 / 60); // 60 fps
 };
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 const btnMobile = document.getElementById('btnHamburger');
 
 function toggleMenu() {
@@ -106,3 +77,29 @@ function toggleMenu() {
 }
 
 btnMobile.addEventListener('click', toggleMenu)
+
+const target =document.querySelectorAll('[data-anime]', '[data-anime2]') 
+const animationClass = 'animated';
+
+function animeScroll() {
+    const windowTop = window.pageYOffset + ((window.innerHeight * 3) /4);
+    target.forEach(function (element) {
+        if((windowTop) > element.offsetTop) {
+            element.classList.add(animationClass);
+        } else {
+            element.classList.remove(animationClass);
+        }
+
+    })
+}
+
+animeScroll();
+
+if(target.length) {
+    window.addEventListener('scroll', function() {
+        animeScroll();
+    })
+}
+
+
+
