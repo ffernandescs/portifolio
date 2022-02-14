@@ -1,406 +1,352 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-    <title>Portifolio</title>
-</head> 
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Felipe Fernandes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;600&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <script src="https://kit.fontawesome.com/6cdeabacf5.js" crossorigin="anonymous"></script>
+</head>
+
 <body>
-  <header>
-    <div class="inicio">
-      <div class="cabecalho">
-        <div class="logo">
-          <h1>Fernandes</h1>
-          <p>Desenvolvimento Web e Mobile</p>
+  <header id="menu" class="">
+    <div class="menuContainer">
+      <div class="logo">
+        <h1>Fernandes</h1>
+        <p>Desenvolvimento Web e Mobile</p>
+      </div>
+
+      
+
+      <nav id="navMenu" class="menu">
+        <ul id="idListe" class="listMenu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#sb">Sobre</a></li>
+          <li><a href="#sv">Serviços</a></li>
+          <li><a href="#pj">Projetos</a></li>
+          <li><a href="#exp">Qualidades</a></li>
+          <li><a href="#skill">Skill</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+        <div class="rede">
+          <a href="https://github.com/ffernandescs" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://www.instagram.com/ffernandescs/" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/felipefcs/" target="_blank"><i class="fab fa-linkedin"></i></a>
         </div>
-        <div class="menu">
-          <nav id="navMenu" class="listaMenu">
-            <button id="btnMobile" aria-expanded="false">
-              <span id="hamburger"></span>
-            </button>
-          </label>
-            <ul id="#menuActive" class="menuLister">
-              <li><a href="#informacao">Home</a></li>
-              <li><a href="#sobre">Sobre</a></li>
-              <li><a href="#principal">Serviços</a></li>
-              <li><a href="#portifolio">Qualificação</a></li>
-              <li><a href="#cv"> Habilidades</a></li>
-              <li><a href="#contact">Contato</a></li>
-            </ul>
-          </nav>
-          <div class="redes">
-            <a href="https://www.instagram.com/felipe.fernandes.cs/" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://github.com/ffernandescs" target="_blank"><i class="fab fa-github-square"></i></a>
-            <a href="https://www.linkedin.com/in/felipefcs/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-          </div>
+        <div id="btnHamburger" class="menuHambuger">
+          <span id="hamburger"></span>
         </div>
+      </nav>
+      <div id="btnTop">
+        <i class="fa fa-arrow-up"></i>
       </div>
     </div>
   </header>
-  <section id="#informacao" class="informacao">
-    <div class="ImgText">
-      <div class="info">,
-        <h1>Felipe Fernandes</h1>
-        <span>Desenvolvedor Web</span>
-        <span>Desenvolvedor de Aplicativos</span>
-      </div>
-      <div class="logoImg">
-        <img src="./assets/img/logo.jpg" alt="">
-      </div>
-    </div>
-  </section>
-  <section id="#sobre" class="principal">
+
+  <section id="home">
     <div class="container">
-      <div class="textoGuia">
-        <h1>Sobre</h1>
-        <div></div>
-      </div>
-      <div class="textimage">
-        <div class="image">
+      <div class="containerInicio">
+        <div class="textInicio">
+          <h1>Felipe Fernandes</h1>
+          <span>Desenvolvedor Web</span>
+          <span>Desenvolvedor Mobile</span>
+        </div>
+        <div class="imagemLogo">
           <img src="./assets/img/about.jpeg" alt="">
         </div>
-        <div class="text">
-          <h1>Felipe Fernandes</h1>
-          <p>Meu primeiro contato com Tecnologia foi no ano de 2008 quando obtive meu primeiro computador, lembro que fiquei confuso pois sem saber o que fazer, apos uma semana a curiosidade
-            tomou conta de mim, comecei a me interessar pela parte de software e desde então ja começava a solucionar problemas. Ao logo dos anos fui me apegando cada vez mais a tecnologia, aprendi desde a solucionar problemas tanto na parte de 
-            hardware quanto software, mais a curiosidade não parava cada vez mais eu queria saber os processos por traz de tanta tecnologia que ultilizava, e ai comecei a trabalhar para uma empresa como Tecnico de Informatica, onde adquirir experiencias nas ares de Redes de Computadores, achei facinante então descidir fazer o curso de Superior em Redes de computadores.
-            Neste tempo fui vendo que não estava feliz e comecei a rever assuntos voltados a Programação, pois no inicio da minha carreira em tecnologia eu tive muito desejo de me tornar Programador,
-            porem devido a minha situação financeira não ser favoravel naquele momento pois a historia da minha vida sempre se resumiu a ter que trabalhar desde os 12 anos de idade o que acabou me levando para um outro cenario dentro da Tecnologia.
-            Assim que chegou a pandemia perdi meu emprego na Area de Suporte, e então descidir voltar a estudar Programação estou finalizando a Pos Graduação em Desenvolvimento de Tecnologias Digitais, pois minha meta é entrar como Desenvolvedor Front End.
-            Atualmente estou bastante focado em HTML5, CCS3, JavaScript e React.
-            </p>
-        </div>
       </div>
     </div>
   </section>
-  <section id="#principal" class="principal">
-    <div class="container">
-      <div class="textoGuia">
-        <h1>Serviços</h1>
-        <div></div>
-      </div>
-      <div class="listaService">
-        <ul>
-          <li>
-            <div class="box">
-              <div class="fadeIn"></div>
-              <i class="fas fa-mobile-alt"></i>
-              <h1>Desenvolvedor de Aplicativos</h1>
-              <span>Desenvolvimento de Aplicativos para Celulares Android e iOS (iPhone).</span>
-            </div>
-          </li>
-          <li>
-            <div class="box">
-              <div class="fadeIn"></div>
-              <i class="fas fa-mobile-alt"></i>
-              <h1>Criação de Sites</h1>
-              <span>Desenvolvedor de Sites, HotSites, especialista em HTML, CSS, JavaScript e React.</span>
-            </div>
-          </li>
-          <li>
-            <div class="box">
-              <div class="fadeIn"></div>
-              <i class="fas fa-mobile-alt"></i>
-              <h1>Desenvolvedor Front-End</h1>
-              <span>Desenvolvimento em HTML5, JavaScript, CSS e React.</span>
-            </div>
-          </li>
-          <li>
-            <div class="box">
-              <div class="fadeIn"></div>
-              <i class="fas fa-mobile-alt"></i>
-              <h1>Desenvolvedor de Aplicativos</h1>
-              <span>Desenvolvimento de Aplicativos para Celulares Android e iOS (iPhone).</span>
-            </div>
-          </li>
-          <li>
-            <div class="box">
-              <div class="fadeIn"></div>
-              <i class="fas fa-mobile-alt"></i>
-              <h1>Criação de Sites</h1>
-              <span>Desenvolvedor de Sites, HotSites, especialista em HTML, CSS, JavaScript e React.</span>
-            </div>
-          </li>
-          <li>
-            <div class="box">
-              <div class="fadeIn"></div>
-              <i class="fas fa-mobile-alt"></i>
-              <h1>Desenvolvedor Front-End</h1>
-              <span>Desenvolvimento em HTML5, JavaScript, CSS e React.</span>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
-  <section id="#projetos" class="principal">
-    <div class="container">
-      <div class="textoGuia">
-        <h1>Projetos</h1>
-        <div></div>
-      </div>
-      <div class="listaProject">
-        <ul>
-          <li>
-            <div class="boxProject">
-              <div class="pj">
-                <img src="./assets/img/1.jpg" alt="">
-                <a class="btn" href=""><span>Acessar</span></a>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="boxProject">
-              <div class="pj">
-                <img src="./assets/img/1.jpg" alt="">
-                <a class="btn" href=""><span>Acessar</span></a>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="boxProject">
-              <div class="pj">
-                <img src="./assets/img/1.jpg" alt="">
-                <a class="btn" href=""><span>Acessar</span></a>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="boxProject">
-              <div class="pj">
-                <img src="./assets/img/1.jpg" alt="">
-                <a class="btn" href=""><span>Acessar</span></a>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="boxProject">
-              <div class="pj">
-                <img src="./assets/img/1.jpg" alt="">
-                <a class="btn" href=""><span>Acessar</span></a>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="boxProject">
-              <div class="pj">
-                <img src="./assets/img/1.jpg" alt="">
-                <a class="btn" href=""><span>Acessar</span></a>
-              </div>
-            </div>
-          </li>
-          
-          
-        
-        </ul>
-      </div>
-    </div>
-  </section>
-  <section id="#projetos" class="principal">
-    <div class="container2">
-      <div class="textoGuia">
-        <h1>Qualificação</h1>
-        <div></div>
-        <p>Um pouco sobre minha tragetória no mundo da Tecnologia</p>
-      </div>
-      <div class="experiencia">
-        <div class="exp">
-          <div class="cont1">
-            <h1>Developer</h1>
-            <span>Agosto de 2015 - Setembro de 2020</span>
-          </div>
-          <div class="cont2">
-            <div class="icoBox">
-              <div class="ico">
-                <i class="fas fa-briefcase"></i>
-              </div>
-              <div class="linha"></div>
-            </div>
-          </div>
-          <div class="cont3">
-            <h1>Freelance</h1>
-            <div></div>
-            <p>De forma independente, atuo com o desenvolvimento de De forma independente, atuo com o desenvolvimento software de ponta a ponta, desde o levantamento de requisitos com as partes envolvidas no projeto, prototipação, codificação no lado do cliente e servidor, testes, documentação, implementação, até a apresentação para o cliente final, utilizando linguagens fortes no mercado, sempre atualizado e a nível de exigência internacional, trabalhando com metodologias ágeis.</p>
-          </div>
-        </div>
-        <div class="exp">
-          <div class="cont1">
-            <h1>Developer</h1>
-            <span>2015 - 2020</span>
-          </div>
-          <div class="cont2">
-            <div class="icoBox">
-              <div class="ico">
-                <i class="fas fa-briefcase"></i>
-              </div>
-              <div class="linha"></div>
-            </div>
-          </div>
-          <div class="cont3">
-            <h1>Freelance</h1>
-            <div></div>
-            <p>De forma independente, atuo com o desenvolvimento de software de ponta a ponta, desde o levantamento de requisitos com as partes envolvidas no projeto, prototipação, codificação no lado do cliente e servidor, testes, documentação, implementação, até a apresentação para o cliente final, utilizando linguagens fortes no mercado, sempre atualizado e a nível de exigência internacional, trabalhando com metodologias ágeis.</p>
-          </div>
-        </div>
-        <div class="exp">
-          <div class="cont1">
-            <h1>Developer</h1>
-            <span>2015 - 2020</span>
-          </div>
-          <div class="cont2">
-            <div class="icoBox">
-              <div class="ico">
-                <i class="fas fa-briefcase"></i>
-              </div>
-              <div class="linha"></div>
-            </div>
-          </div>
-          <div class="cont3">
-            <h1>Freelance</h1>
-            <div></div>
-            <p>De forma independente, atuo com o desenvolvimento de software de ponta a ponta, desde o levantamento de requisitos com as partes envolvidas no projeto, prototipação, codificação no lado do cliente e servidor, testes, documentação, implementação, até a apresentação para o cliente final, utilizando linguagens fortes no mercado, sempre atualizado e a nível de exigência internacional, trabalhando com metodologias ágeis.</p>
-          </div>
-        </div>
-        
-      </div>
-  </section>
-  <section id="#projetos" class="principal">
-    <div class="container2">
-      <div class="textoGuia">
-        <h1>Habilidades</h1>
-        <div></div>
-      </div>
-        <ul class="skill">
-          <li class="hab1">
-            <div class="svgText">
-              <img src="https://img.icons8.com/color/48/000000/html-5--v1.png"/>
-              <h1>HTML</h1>
-              <div class="perc">
-                <span>90%</span>
-              </div>
-              
-            </div>
-            <div class="progress">
-              <div class="percentual"></div>
-            </div>
-          </li>
-          <li class="hab1">
-            <div class="svgText">
-              <img src="https://img.icons8.com/color/48/000000/css3.png"/>
-              <h1>CSS</h1>
-              <div class="perc">
-                <span>90%</span>
-              </div>
-            </div>
-            <div class="progress">
-              <div class="percentual"></div>
-            </div>
-          </li>
-          <li class="hab1">
-            <div class="svgText">
-              <img src="https://img.icons8.com/color/48/000000/javascript--v1.png"/>
-              <h1>Javascript</h1>
-              <div class="perc">
-                <span>90%</span>
-              </div>
-            </div>
-            <div class="progress">
-              <div class="percentual"></div>
-            </div>
-          </li>
-          <li class="hab1">
-            <div class="svgText">
-              <img src="https://img.icons8.com/color/48/000000/react-native.png"/>
-              <h1>React Native</h1>
-              <div class="perc">
-                <span>90%</span>
-              </div>
-            </div>
-            <div class="progress">
-              <div class="percentual"></div>
-            </div>
-          </li>
-          <li class="hab1">
-            <div class="svgText">
-              <img src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/48/000000/external-jquery-is-a-javascript-library-designed-to-simplify-html-logo-shadow-tal-revivo.png"/>
-              <h1>JQuery</h1>
-              <div class="perc">
-                <span>90%</span>
-              </div>
-            </div>
-            <div class="progress">
-              <div class="percentual"></div>
-            </div>
-          </li>
-          <li class="hab1">
-            <div class="svgText">
-              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABmJLR0QA/wD/AP+gvaeTAAAEIUlEQVRogdWaW4iVVRTHf2u8pKZ2kTGLkbRmJiprzKCChHpICEcoCMKsBOmxEKKiHowuTz0oCBH2EBEUBTlpKSTT5SUMExSkwm6MDDTCSFR0nMqs/Pewv3P6zprvO98+tznH/9NZe6+113+dvfdaa/YcACQtlzQiqaTuR0nSXknXAJik5cAx4FLOL/wKDJmkEeC+TrNpELtNUglY1GkmDaJkktRpFs2gp9MEmsVMBHAAuB5YAjwK/NXS1duc8k5Imu/8PdtKB+3egQNm9qcbe6+VDtodwJyMsbmtdNDuAO6V5AvkllY6mIk0+jWwDZgEHgC2Apaa30f1xR4EhmIX74Y60G9mY2VB0vPAc7HG3VAHFjh5cT3GsxtwOAWME5qplUBfhs5PCZELEr00FiTjU8DfwDk3/4ezmQ/My2VTZ07flJHXByXtkPSqpGck3SFplqSJxG6e0385Gb87l1S1/gu1SMXuwIfARjM77SfM7HvgiQzH5Y/+mM6K9BmFmDtwnBzykfCEWxpAzA68mCaf7NpWYBWw18z2ewNJi/m/iHnCZZ83SVoEjJpZKWU7BCwFylu4oia7gnN/2h8zSTudzno3v0HS2dT8Ejf/hrMfcPM7CjhVoegIjZnZP25ss5MfdvKPVLcQbT1CRQFUnXtJc4GLnc5lTjYndzSA/rRgZmeBb53Ol06+2skdDWCZpFvc2CME0r8DnwAvufn1Tm5rGo3JQo8TmjAAzOwQOc2WpJVp3QS+0nq5KcTUgY2S/EWdBkkLgbcJpT8NT/jfSG5RiG3mXlfoEjMhaQ1wELgtY9oT9lnNB3wmkhMQ38zNJrzeVSDpCkIKHQbWMj37lOED8PJFTj4cyalCLAbjZva+G/ucoioZUBRAb1ows32SHiO8ZBwDBoAn8xaPDeBkWkiq87JI26IAbgX2pAfM7JWUr9yjC/F3YEBSJf0l1fl+YCzfpIKiAKa16PUgNoClwFPpATPbb2b9hK1+mvyzW5SF+oBdkrJeMAo5xv5NPAnsBLabWW4alHQDsAu4PTW8nWrSdwE3Z5h/A7wFnCAUu8uTdYbJfp6pOC3CF5J8v1NrvTmSPquno2wGRTtwBrjWzMZTBAcJ/0/oIzR7R4A9ZnYupbMO+Cg26KZQEOAHTneNpKkMvTedXm9Lv+YaKLrEPzj5TuDCDL11Tm7ktaMhFAWw0MkfA79k6I04+cqGGdWJom9qbVows68kXUdomVcQ+pojwKizG24ZwwLEpNFNZvZO7IIKPdJxpvc4bUFMIXtN0kMxi0m6ipB9ZoQ81Pe4e5RQaA4TeqNThILTC9wI3AM8SK1nwDagG16nm0I3vE43hR7c08l5ht96gE87zaIJjJrCrz4OAZd0mk2d+BlY3WNm3xGeSXYDpdo2XYES8C6w2swm/gP7Pq4WPws3VgAAAABJRU5ErkJggg==">
-              <h1>Git</h1>
-              <div class="perc">
-                <span>90%</span>
-              </div>
-            </div>
-            <div class="progress">
-              <div class="percentual"></div>
-            </div>
-          </li>
-        </ul>
-    </div>
-      
-  </section>
-  <section id="#projetos" class="principal">
-    <div class="container2">
-      <div class="textoGuia">
-        <h1>Contato</h1>
-        <div></div>
-      </div>
-      <div class="contContac">
-        
-        <div class="formContac">
-          <div class="textContac">
-            <h1>Vamos lá!</h1>
-            <h3>Preencha o formulário abaixo para esclarermos suas dúvidas e dar início ao seu projeto!</h3>
-          </div>
-          <form>
-            <input class="campo" type="text" name="name" placeholder="Nome">
-            <input class="campo" type="text" name="email" placeholder="E-mail">
-            <input class="campo" type="text" name="assunto" placeholder="Assunto">
-            <textarea name="message" id="" cols="30" rows="10" placeholder="Digite sua menssagem aqui."></textarea>
-            <input class="button" type="submit" value="Enviar">
-          </form>
-        </div>
-        <div class="formContac">
-          <div class="textContac">
-            <h1>Maiores Informções:</h1>
-            <h3>Preencha o formulário abaixo para esclarermos suas dúvidas e dar início ao seu projeto!</h3>
-          </div>
-          <div class="localContac">
-            <a href=""><i class="fas location-dot"></i><h2>Localização</h2></a>
-            <a href=""><i class="fab envelope"></i><h2>Envie um E-mail</h2></a>
-            <a href=""><i class="fa fa-phone-rotary"></i><h2>Chamada ou Whatsapp</h2></a>
-          </div>
-          <div class="redeContac">
-            <a href=""><i class="fab fa-instagram"></i></a>
-            <a href=""><i class="fab fa-whatsapp"></i></a>
-            <a href=""><i class="fab fa-linkedin"></i></a>
-            <a href=""><i class="fab fa-discord"></i></a>
-            <a href=""><i class="fab fa-github-square"></i></a>
-            <a href=""><i class="fab fa-youtube"></i></a>
-          </div>
 
+  <section id="sb" class="backSection">
+    <div class="container">
+      <div class="containerSobre">
+        <div class="textGuia">
+          <h1>Sobre</h1>
+          <span></span>
+        </div>
+        <div class="infoSobre">
+          <div class="imgSobre">
+            <img src="./assets/img/about.jpeg" alt="">
+          </div>
+          <div class="textContainer">
+            <h1>Felipe Fernandes</h1>
+            <p>Meu primeiro contato com Tecnologia foi no ano de 2008 quando obtive meu primeiro computador, lembro que fiquei confuso pois sem saber o que fazer, apos uma semana a curiosidade tomou conta de mim, comecei a me interessar pela parte de software e desde então ja começava a solucionar problemas. Ao logo dos anos fui me apegando cada vez mais a tecnologia, aprendi desde a solucionar problemas tanto na parte de hardware quanto software, mais a curiosidade não parava cada vez mais eu queria saber os processos por traz de tanta tecnologia que ultilizava, e ai comecei a trabalhar para uma empresa como Tecnico de Informatica, onde adquirir experiencias nas ares de Redes de Computadores, achei facinante então descidir fazer o curso de Superior em Redes de computadores. Neste tempo fui vendo que não estava feliz e comecei a rever assuntos voltados a Programação, pois no inicio da minha carreira em tecnologia eu tive muito desejo de me tornar Programador, porem devido a minha situação financeira não ser favoravel naquele momento pois a historia da minha vida sempre se resumiu a ter que trabalhar desde os 12 anos de idade o que acabou me levando para um outro cenario dentro da Tecnologia. Assim que chegou a pandemia perdi meu emprego na Area de Suporte, e então descidir voltar a estudar Programação estou finalizando a Pos Graduação em Desenvolvimento de Tecnologias Digitais, pois minha meta é entrar como Desenvolvedor Front End. Atualmente estou bastante focado em HTML5, CCS3, JavaScript e React.</p>
+          </div>
         </div>
       </div>
     </div>
-      
   </section>
-  <script src="./assets/js/jquery.js"></script>
-  <script src="./assets/js/script.js"></script>
+
+  <section id="sv" class="backSection">
+    <div class="container">
+      <div class="containerService">
+        <div class="textGuia">
+          <h1>Serviços</h1>
+          <span></span>
+        </div>
+        <ul class="listService">
+          <li>
+            <i class="fab fa-github"></i>
+            <h1>Desenvolvedor de Aplicativos</h1>
+            <span>Desenvolvimento de Aplicativos para Celulares Android</span>
+          </li>
+          <li>
+            <i class="fab fa-github"></i>
+            <h1>Desenvolvedor de Aplicativos</h1>
+            <span>Desenvolvimento de Aplicativos para Celulares Android</span>
+          </li>
+          <li>
+            <i class="fab fa-github"></i>
+            <h1>Desenvolvedor de Aplicativos</h1>
+            <span>Desenvolvimento de Aplicativos para Celulares Android</span>
+          </li>
+          <li>
+            <i class="fab fa-github"></i>
+            <h1>Desenvolvedor de Aplicativos</h1>
+            <span>Desenvolvimento de Aplicativos para Celulares Android</span>
+          </li>
+          <li>
+            <i class="fab fa-github"></i>
+            <h1>Desenvolvedor de Aplicativos</h1>
+            <span>Desenvolvimento de Aplicativos para Celulares Android</span>
+          </li>
+          <li>
+            <i class="fab fa-github"></i>
+            <h1>Desenvolvedor de Aplicativos</h1>
+            <span>Desenvolvimento de Aplicativos para Celulares Android</span>
+          </li>
+        </ul>
+      </div>
+  </section>
+  <section id="pj" class="backSection">
+    <div class="container">
+      <div class="containerProjetos">
+        <div class="textGuia">
+          <h1>Projetos</h1>
+          <span></span>
+        </div>
+        <ul class="navProjetos">
+          <li>
+            <div class="textProject">
+              <h1>Projeto</h1>
+            </div>
+            <div class="btnImage">
+              <img src="./assets/img/1.jpg" alt="">
+              <button>Acessar</button>
+            </div>
+          </li>
+          <li>
+            <div class="textProject">
+              <h1>Projeto</h1>
+            </div>
+            <div class="btnImage">
+              <img src="./assets/img/1.jpg" alt="">
+              <button>Acessar</button>
+            </div>
+          </li>
+          <li>
+            <div class="textProject">
+              <h1>Projeto</h1>
+            </div>
+            <div class="btnImage">
+              <img src="./assets/img/1.jpg" alt="">
+              <button>Acessar</button>
+            </div>
+          </li>
+          <li>
+            <div class="textProject">
+              <h1>Projeto</h1>
+            </div>
+            <div class="btnImage">
+              <img src="./assets/img/1.jpg" alt="">
+              <button>Acessar</button>
+            </div>
+          </li>
+        </ul>
+  </section>
+  <section id="exp" class="backSection">
+    <div class="container">
+      <div class="containerQualificao">
+        <div class="textGuia">
+          <h1>Qualificações</h1>
+          <span></span>
+        </div>
+
+        <div class="backExp">
+          <div class="contExp">
+            <div class="cont1">
+              <div>
+                <h1>Developer</h1>
+                <span>Agosto de 2015 - Setembro de 2020</span>
+              </div>
+              <img src="./assets/img/empresas/ibyte.png" alt="">
+            </div>
+            <div class="cont2">
+              <i class="fas fa-briefcase"></i>
+              <span></span>
+            </div>
+            <div class="cont3">
+              <h1>Freelance</h1>
+              <p>De forma independente, atuo com o desenvolvimento de De forma independente, atuo com o desenvolvimento software de ponta a ponta, desde o levantamento de requisitos com as partes envolvidas no projeto, prototipação, codificação no lado do cliente e servidor, testes, documentação, implementação, até a apresentação para o cliente final, utilizando linguagens fortes no mercado, sempre atualizado e a nível de exigência internacional, trabalhando com metodologias ágeis.</p>
+            </div>
+          </div>
+          <div class="contExp">
+            <div class="cont1">
+              <div>
+                <h1>Developer</h1>
+                <span>Agosto de 2015 - Setembro de 2020</span>
+              </div>
+              <img src="./assets/img/empresas/ipesufarec.jfif" alt="">
+            </div>
+            <div class="cont2">
+              <i class="fas fa-briefcase"></i>
+              <span></span>
+            </div>
+            <div class="cont3">
+              <h1>Freelance</h1>
+              <p>De forma independente, atuo com o desenvolvimento de De forma independente, atuo com o desenvolvimento software de ponta a ponta, desde o levantamento de requisitos com as partes envolvidas no projeto, prototipação, codificação no lado do cliente e servidor, testes, documentação, implementação, até a apresentação para o cliente final, utilizando linguagens fortes no mercado, sempre atualizado e a nível de exigência internacional, trabalhando com metodologias ágeis.</p>
+            </div>
+          </div>
+          <div class="contExp">
+            <div class="cont1">
+              <div>
+                <h1>Developer</h1>
+                <span>Agosto de 2015 - Setembro de 2020</span>
+              </div>
+              <img src="./assets/img/empresas/placa homenagem e réplica.png" alt="">
+            </div>
+            <div class="cont2">
+              <i class="fas fa-briefcase"></i>
+              <span></span>
+            </div>
+            <div class="cont3">
+              <h1>Freelance</h1>
+              <p>De forma independente, atuo com o desenvolvimento de De forma independente, atuo com o desenvolvimento software de ponta a ponta, desde o levantamento de requisitos com as partes envolvidas no projeto, prototipação, codificação no lado do cliente e servidor, testes, documentação, implementação, até a apresentação para o cliente final, utilizando linguagens fortes no mercado, sempre atualizado e a nível de exigência internacional, trabalhando com metodologias ágeis.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="skill" class="backSection">
+    <div class="container">
+      <div class="containerSkill">
+        <div class="textGuia">
+          <h1>Habilidades</h1>
+          <span></span>
+        </div>
+        <ul class="navSkill">
+          <li>
+            <div class="textSkill">
+              <img src="./assets/img/icon/html 5_64.png">
+              <h1>HTML</h1>
+              <div class="boxPercent">
+                <span>90%</span>
+              </div>            </div>
+            <div class="percentual">
+              <span></span>
+            </div>
+          </li>
+          <li>
+            <div class="textSkill">
+              <img src="./assets/img/icon/css.png">
+              <h1>CSS</h1>
+              <div class="boxPercent">
+                <span>90%</span>
+              </div>
+            </div>
+            <div class="percentual">
+              <span></span>
+            </div>
+          </li>
+          <li>
+            <div class="textSkill">
+              <img src="./assets/img/icon/javascript.png">
+              <h1>JavaScript</h1>
+              <div class="boxPercent">
+                <span>90%</span>
+              </div>            </div>
+            <div class="percentual">
+              <span></span>
+            </div>
+          </li>
+          <li>
+            <div class="textSkill">
+              <img src="./assets/img/icon/react.png">
+              <h1>ReactJs</h1>
+              <div class="boxPercent">
+                <span>90%</span>
+              </div>            </div>
+            <div class="percentual">
+              <span></span>
+            </div>
+          </li>
+          <li>
+            <div class="textSkill">
+              <img src="./assets/img/icon/reactnative.jpg">
+              <h1>React Native</h1>
+              <div class="boxPercent">
+                <span>90%</span>
+              </div>            </div>
+            <div class="percentual">
+              <span></span>
+            </div>
+          </li>
+          <li>
+            <div class="textSkill">
+              <img src="./assets/img/icon/jquery.png">
+              <h1>jQuery</h1>
+              <div class="boxPercent">
+                <span>90%</span>
+              </div>            </div>
+            <div class="percentual">
+              <span></span>
+            </div>
+          </li>
+        </ul>
+  </section>
+  <section id="contact" class="backSection">
+    <div class="container">
+      <div class="containerContact">
+        <div class="textGuia">
+          <h1>Contato</h1>
+          <span></span>
+        </div>
+        <div class="infoContact">
+          <div class="formulario">
+            <div class="textCont">
+              <h1>Vamos la!</h1>
+              <span>Preencha o formulário abaixo para esclarermos suas dúvidas e dar início ao seu projeto!</span>
+            </div>
+            <form action="https://api.staticforms.xyz/submit" method="post">
+              <input type="hidden" name="accessKey" value="f780c565-8d5e-4d5e-b68d-6483d4f8a876">
+              <input type="hidden" name="redirectTo" value="http://localhost/portifolio/">
+              <input type="text" name="name" placeholder="Nome:" required>
+              <input type="text" name="email" placeholder="E-Mail:" required>
+              <input type="text" name="name" placeholder="Assunto:" required>
+              <textarea name="message" id="" placeholder="Digite sua menssagem:" cols="30" rows="10" required></textarea>
+              <button>Enviar</button>
+            </form>
+          </div>
+          <div class="textContact">
+            <div class="textCont">
+              <h1>Vamos la!</h1>
+              <span>Preencha o formulário abaixo para esclarermos suas dúvidas e dar início ao seu projeto!</span>
+            </div>
+            <div>
+              <h1>Localização</h1>
+              <h1>Localização</h1>
+              <h1>Localização</h1>
+            </div>
+          </div>
+        </div>
+  </section>
+
+  <script src="./assets/js/app.js"></script>
 </body>
+
 </html>
