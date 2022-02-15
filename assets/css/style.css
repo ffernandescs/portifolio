@@ -289,7 +289,7 @@ section {
 .listService li i {
 	font-size: 2em;
 	margin-bottom: 15px;
-	color: #fff;
+	color: rgb(33, 165, 226);
 	border-radius: 50%;
 }
 .listService li i:hover {
@@ -760,6 +760,102 @@ form button:hover {
 	opacity: 1;
 	transform: translate3d(0, 0, 0);
 }
+
+.cont1 img[data-anime] {
+	opacity: 0;
+	transition: 1s;
+}
+
+.cont1 img[data-anime].animated {
+	opacity: 1;
+	transform: scale(1);
+}
+
+.html[data-anime] {
+	opacity: 0;
+	transition: 1s;
+}
+
+.html[data-anime].animated {
+	opacity: 1;
+	transform: scaleZ(1);
+}
+
+.html[data-anime="right"] {
+	transform: scaleZ(0);
+}
+
+.css[data-anime] {
+	opacity: 0;
+	transition: 1s;
+}
+
+.css[data-anime].animated {
+	opacity: 1;
+	transform: scaleZ(1);
+}
+
+.css[data-anime="right"] {
+	transform: scaleZ(0);
+}
+
+.javaScript[data-anime] {
+	opacity: 0;
+	transition: 1s;
+}
+
+.javaScript[data-anime].animated {
+	opacity: 1;
+	transform: scaleZ(1);
+}
+
+.javaScript[data-anime="right"] {
+	transform: scaleZ(0);
+}
+
+.reactJs[data-anime] {
+	opacity: 0;
+	transition: 1s;
+}
+
+.reactJs[data-anime].animated {
+	opacity: 1;
+	transform: scaleZ(1);
+}
+
+.reactJs[data-anime="right"] {
+	transform: scaleZ(0);
+}
+
+.reactNative[data-anime] {
+	opacity: 0;
+	transition: 1s;
+}
+
+.reactNative[data-anime].animated {
+	opacity: 1;
+	transform: scaleZ(1);
+}
+
+.reactNative[data-anime="right"] {
+	transform: scaleZ(0);
+}
+
+.jQuery[data-anime] {
+	opacity: 0;
+	transition: 1s;
+}
+
+.jQuery[data-anime].animated {
+	opacity: 1;
+	transform: scaleZ(1);
+}
+
+.jQuery[data-anime="right"] {
+	transform: scaleZ(0);
+}
+
+
 
 
 @media (max-width: 600px) {

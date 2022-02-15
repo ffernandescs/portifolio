@@ -78,7 +78,7 @@ function toggleMenu() {
 
 btnMobile.addEventListener('click', toggleMenu)
 
-const target =document.querySelectorAll('[data-anime]', '[data-anime2]') 
+const target =document.querySelectorAll('[data-anime]') 
 const animationClass = 'animated';
 
 function animeScroll() {
