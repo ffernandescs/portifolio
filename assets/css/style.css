@@ -239,9 +239,9 @@ section {
 }
 
 .textContainer p {
-	font-size: 0.6em;
+	font-size: 0.8em;
 	font-weight: 0;
-	text-align: center;
+	text-align: justify;
 	letter-spacing: 0.1em;
 	padding-top: 20px;
 }
@@ -743,8 +743,9 @@ form button:hover {
 }
 
 [data-anime] {
-	opacity: 0;
-	transition: .3s;
+	visibility: hidden; 
+	animation-duration: 1.2s; 
+	animation-name: fadeIn;
 }
 
 [data-anime="right"] {
@@ -757,7 +758,7 @@ form button:hover {
 }
 
 [data-anime].animated {
-	opacity: 1;
+	visibility: visible; 
 	transform: translate3d(0, 0, 0);
 }
 
@@ -855,7 +856,397 @@ form button:hover {
 	transform: scaleZ(0);
 }
 
+@media (max-width: 1000px) {
 
+	#menu {
+		background-color: #000;
+		width: 100%;
+		height: 80px;
+		position: fixed;
+		z-index: 1;
+	}
+
+	.menuContainer {
+		width: 100%;
+	}
+
+	.logo {
+		padding-left: 20px;
+		font-size: 12px;
+	}
+
+	#btnHamburger {
+		position: fixed;
+		top: 2.5vh;
+		right: 20px;
+		display: block;
+	}
+	
+	.menu {
+		position: absolute;
+		top: 5vh;
+		left: 0;
+		width: 100%;
+	}
+
+	#navMenu.ativo #idListe {
+		height: calc(100vh - 50px);
+		visibility: visible;
+		overflow-y: auto;
+	}
+
+	.menu .listMenu {
+		display: flex;
+		width: 100%;
+		flex-direction: column;
+		align-items: center;
+		top: 1vh;
+		position: absolute;
+		padding: 0;
+		visibility: hidden;
+		background-color: #000;
+		height: 0px;
+		transition: .3s;
+		z-index: 1000;
+		overflow-y: hidden;
+	}
+
+	.listMenu li {
+		width: 80%;
+		padding: 20px;
+		border-bottom: 1px solid #fff;
+	}
+
+	.listMenu li a {
+		margin-left: 0;
+	}
+
+	.menu .rede {
+		display: none;
+	}
+
+	#home {
+		height: calc(100vh - 100px);
+	}
+
+	.containerSobre, .containerService, .containerProjetos, .containerQualificao, .containerSkill, .containerContact {
+		width: 90%;
+		font-size: 20px;
+	}
+
+	.container {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+
+	.containerInicio {
+		flex-direction: column-reverse;
+		width: 90%;
+		padding: 0;
+	}
+
+	.textInicio {
+		font-size: 16px;
+	}
+
+	.containerInicio {
+		position: absolute;
+		top: 28vh;
+		width: 70%;
+		flex-direction: row;
+	}
+
+	.textInicio span {
+		text-align: center;
+	}
+
+	.imagemLogo {
+		top: 12vh;
+		width: 120px;
+		height: 120px;
+	}
+
+	.infoSobre {
+		background-color: transparent;
+		border: none;
+		height: 600px;
+	}
+
+	.imgSobre {
+		display: none;		
+	}
+
+	.listService li {
+		padding: 20px 0;
+		width: 50%;
+	}
+
+	#contact {
+		display: none;
+	}
+
+	.navProjetos li {
+		width: 24%;
+		height: 200px;
+		margin-bottom: 20px;
+	}
+
+	.backExp {
+		width: calc(100% - 40px);
+		height: auto;
+		border-radius: 5px;
+	}
+
+	.cont3::after {
+		content: '';
+		display: block;
+		background-color: rgb(255, 255, 255);
+		margin-top: 20px;
+		width: 100%;
+		height: 3px;
+		border-radius: 30px;
+	}
+
+	.cont2 {
+		display: none;
+	}
+
+	.contExp {
+		flex-direction: column;
+		height: auto;
+		padding-bottom: 20px;
+	}
+
+	.cont1 {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.cont1 img {
+		width: 70px;
+		height: 70px;
+		border-radius: 5px;
+	}
+
+	.cont1, .cont3 {
+		padding-bottom: 10px;
+	}
+
+	.navSkill li {
+		background: none;
+		width: 49%;
+	}
+
+	.navSkill li:hover {
+		background: none;
+	}
+
+	.textSkill {
+		padding: 10px 0;
+	}
+
+	.boxPercent::after {
+		top: 2.5vh;
+	}
+	
+}
+
+@media (max-height: 600px) {
+
+	#menu {
+		background-color: #000;
+		width: 100%;
+		height: 60px;
+		position: fixed;
+		z-index: 1;
+	}
+
+	.menuContainer {
+		width: 100%;
+	}
+
+	.logo {
+		padding-left: 20px;
+		font-size: 12px;
+	}
+
+	#btnHamburger {
+		position: fixed;
+		top: 2.5vh;
+		right: 20px;
+		display: block;
+	}
+	
+	.menu {
+		position: absolute;
+		top: 5vh;
+		left: 0;
+		width: 100%;
+	}
+
+	#navMenu.ativo #idListe {
+		height: calc(100vh - 50px);
+		visibility: visible;
+		overflow-y: auto;
+	}
+
+	.menu .listMenu {
+		display: flex;
+		width: 100%;
+		flex-direction: column;
+		align-items: center;
+		top: 1vh;
+		position: absolute;
+		padding: 0;
+		visibility: hidden;
+		background-color: #000;
+		height: 0px;
+		transition: .3s;
+		z-index: 1000;
+		overflow-y: hidden;
+	}
+
+	.listMenu li {
+		width: 80%;
+		padding: 20px;
+		border-bottom: 1px solid #fff;
+	}
+
+	.listMenu li a {
+		margin-left: 0;
+	}
+
+	.menu .rede {
+		display: none;
+	}
+
+	#home {
+		height: calc(100vh - 100px);
+	}
+
+	.containerSobre, .containerService, .containerProjetos, .containerQualificao, .containerSkill, .containerContact {
+		width: 90%;
+		font-size: 20px;
+	}
+
+	.container {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+
+	.containerInicio {
+		flex-direction: column-reverse;
+		width: 90%;
+		padding: 0;
+	}
+
+	.textInicio {
+		font-size: 16px;
+	}
+
+	.containerInicio {
+		position: absolute;
+		top: 28vh;
+		width: 70%;
+		flex-direction: row;
+	}
+
+	.textInicio span {
+		text-align: center;
+	}
+
+	.imagemLogo {
+		top: 12vh;
+		width: 120px;
+		height: 120px;
+	}
+
+	.infoSobre {
+		background-color: transparent;
+		border: none;
+		height: 600px;
+	}
+
+	.imgSobre {
+		display: none;		
+	}
+
+	.listService li {
+		padding: 20px 0;
+		width: 50%;
+	}
+
+	#contact {
+		display: none;
+	}
+
+	.navProjetos li {
+		width: 24%;
+		height: 200px;
+		margin-bottom: 20px;
+	}
+
+	.backExp {
+		width: calc(100% - 40px);
+		height: auto;
+		border-radius: 5px;
+	}
+
+	.cont3::after {
+		content: '';
+		display: block;
+		background-color: rgb(255, 255, 255);
+		margin-top: 20px;
+		width: 100%;
+		height: 3px;
+		border-radius: 30px;
+	}
+
+	.cont2 {
+		display: none;
+	}
+
+	.contExp {
+		flex-direction: column;
+		height: auto;
+		padding-bottom: 20px;
+	}
+
+	.cont1 {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.cont1 img {
+		width: 70px;
+		height: 70px;
+		border-radius: 5px;
+	}
+
+	.cont1, .cont3 {
+		padding-bottom: 10px;
+	}
+
+	.navSkill li {
+		background: none;
+		width: 49%;
+	}
+
+	.navSkill li:hover {
+		background: none;
+	}
+
+	.textSkill {
+		padding: 10px 0;
+	}
+
+	.boxPercent::after {
+		top: 2.5vh;
+	}
+	
+}
 
 
 @media (max-width: 600px) {
@@ -954,7 +1345,7 @@ form button:hover {
 	}
 
 	.textInicio h1 {
-		padding-top: 30px
+		padding-top: 60px
 	}
 
 	.textInicio span {
@@ -962,16 +1353,14 @@ form button:hover {
 	}
 
 	.imagemLogo {
-		position: absolute;
-		top: 12vh;
-		width: 170px;
-		height: 170px;
+		width: 140px;
+		height: 140px;
 	}
 
 	.infoSobre {
 		background-color: transparent;
 		border: none;
-		height: 600px;
+		height: 100%;
 	}
 
 	.imgSobre {
@@ -989,6 +1378,7 @@ form button:hover {
 
 	.navProjetos li {
 		width: 100%;
+		height: 350px;
 		margin-bottom: 20px;
 	}
 
@@ -1046,8 +1436,7 @@ form button:hover {
 		padding: 10px 0;
 	}
 
-
-	
-
+	.boxPercent::after {
+		top: 1.4vh;
 	
 }
